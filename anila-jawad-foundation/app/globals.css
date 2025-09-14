@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-teal: #1DABBA;
+  --brand-grey: #868B91;
+}
+
+body {
+  @apply bg-white text-black;
+  background-image: url('/tree-watermark.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 1200px auto;
+}
+
+/* Header/Footer leaf pattern */
+.header-pattern,
+.footer-pattern {
+  background-image: url('/leaf-pattern.svg');
+  background-repeat: repeat-x;
+  background-size: contain;
+  opacity: 0.2;
+}
